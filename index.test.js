@@ -104,8 +104,16 @@ describe('[Exercise 6] Car', () => {
   beforeEach(() => {
     focus = new utils.Car('focus', 20, 30) // each test must start with a fresh car
   })
-  // test('[15] driving the car returns the updated odometer', () => {})
-  // test('[16] driving the car uses gas', () => {})
+  test('[15] driving the car returns the updated odometer', () => {
+    const input = 600 //miles
+    expect(focus.drive(input)).toBe(600)
+  })
+  // test('[16] driving the car uses gas', () => {
+  //   const input = 100
+  //   const initialTank = focus.tank
+  //   focus.drive(input)
+  //   expect(focus.tank).toBeLessThan(initialTank)
+  // })
   // test('[17] refueling allows to keep driving', () => {})
   // test('[18] adding fuel to a full tank has no effect', () => {})
 })

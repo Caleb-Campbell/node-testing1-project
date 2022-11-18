@@ -140,6 +140,8 @@ class Car {
    */
   drive(distance) {
     // ✨ implement
+    this.tank = this.tank - (distance / this.mpg)
+    return this.odometer += distance
   }
 
   /**
